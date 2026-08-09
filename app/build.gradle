@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'kernel.klita.top'
-    compileSdk 19
+    compileSdk 34
 
     defaultConfig {
         applicationId "kernel.klita.top"
