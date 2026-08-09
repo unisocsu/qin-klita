@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: Generate Gradle Wrapper
-      run: ./gradlew wrapper --gradle-version 8.0
+      run: gradle wrapper --gradle-version 8.0
 
     - name: Change Wrapper Permissions
       run: chmod +x gradlew
