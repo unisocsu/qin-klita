@@ -13,6 +13,13 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    
+    // Explicitly define repositories for the module
+    repositories {
+        google()
+        mavenCentral()
+    }
+
 
     buildTypes {
         release {
