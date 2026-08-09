@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Process process = Runtime.getRuntime().exec("su");
-                    DataOutputStream os = new DataOutputStream(process.outputStream);
+                    DataOutputStream os = new DataOutputStream(process.getOutputStream());
 
                     // Toggle OFF
                     os.writeBytes("settings put global airplane_mode_on 1\n");
